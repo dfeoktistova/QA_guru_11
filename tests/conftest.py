@@ -1,9 +1,16 @@
+from dotenv import load_dotenv
 import pytest
 from selene import Browser, Config
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
+
 @pytest.fixture(autouse=True, scope='session')
+def load_venv():
+    load_dotenv()
+
+
+@pytest.fixture(autouse=True, scope='function')
 def browser_management():
     options = Options()
     selenoid_capabilities = {

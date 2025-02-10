@@ -2,3 +2,4 @@ pytest
 selene>=2.0.0rc2
 allure-pytest
 selenium
+python-dotenv
