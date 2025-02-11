@@ -1,5 +1,4 @@
-pytest
-selene>=2.0.0rc2
+pytest~=8.3.4
 allure-pytest
-selenium
-python-dotenv
+selene==2.0.0rc9
+selenium~=4.28.1
