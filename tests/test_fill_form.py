@@ -17,7 +17,7 @@ state = 'NCR'
 city = 'Noida'
 
 
-def test_fill_form(browser_set):
+def test_fill_form():
     registration_page = RegistrationPage()
 
     with allure.step("Открыть страницу регистрации"):
